@@ -53,7 +53,18 @@ _---------> ***sortType:*** ascending | descending_
 
 # **How to use**
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+Below you will find the API calls reference guide that you can make with this mixin.
+
+## Please note:
+All requests made by this API calls are saved to a variable / data property called `globalContents`.
+So that it the data property / variable you will be using in your "Views" or "Components".
+
+Ex:
+```
+<div v-for="item in globalContents" :key="item">
+	{{item.id}}
+</div>
+```
 
 ### Normal API call
 
