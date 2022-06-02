@@ -74,7 +74,7 @@ Ex:
 
 As the most standard fetch for data is usually an entire collection, I have created a reduced version of the function that takes only two parameters: "url" and "collection". This will translate into a "fetchCollection" requestType by default
 
-    this.getContents("url","yourCollection");
+    this.getContents("https://url.directus.app","yourCollection");
 
 
 ### Fetch by ID
@@ -93,11 +93,11 @@ As the most standard fetch for data is usually an entire collection, I have crea
 ### Sort
 With Single Sort Field
 
-    this.getContents("url","yourCollection","sort",{sortField: "name", sortType:"ascending"});
+    this.getContents("https://url.directus.app","yourCollection","sort",{sortField: "name", sortType:"ascending"});
 
 With Multiple Sort Fields
 
-    this.getContents("url","yourCollection","sort",[{sortField: "name", sortType:"ascending"}, {sortField: "date", sortType:"descending"}]);
+    this.getContents("https://url.directus.app","yourCollection","sort",[{sortField: "name", sortType:"ascending"}, {sortField: "date", sortType:"descending"}]);
 
 # **Author**
 
